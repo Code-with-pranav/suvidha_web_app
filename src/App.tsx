@@ -13,6 +13,7 @@ import UsageLogs from './pages/admin/UsageLogs';
 import ComplaintsMgmt from './pages/admin/ComplaintsMgmt';
 import ContentManager from './pages/admin/ContentManager';
 import NewConnection from './pages/kiosk/NewConnection';
+import PrintReceipt from './pages/kiosk/PrintReceipt';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="status" element={<TrackStatus />} />
           <Route path="upload" element={<DocumentUpload />} />
           <Route path="/new-connection" element={<NewConnection />} />
+          <Route path="/print" element={<PrintReceipt />} />
         </Route>
 
         {/* Admin Routes */}
