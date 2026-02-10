@@ -5,7 +5,7 @@ export const useSessionTimeout = (timeoutMs: number = 120000) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        let timeout: NodeJS.Timeout;
+        let timeout: ReturnType<typeof setTimeout>;
 
         const resetTimer = () => {
             clearTimeout(timeout);

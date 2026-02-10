@@ -1,5 +1,5 @@
 
-import { InputHTMLAttributes } from 'react';
+import type { InputHTMLAttributes } from 'react';
 
 interface TouchInputProps extends InputHTMLAttributes<HTMLInputElement> {
     label: string;
