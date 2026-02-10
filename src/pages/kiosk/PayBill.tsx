@@ -13,7 +13,6 @@ export default function PayBill() {
     const [consumerId, setConsumerId] = useState('');
     const [billData, setBillData] = useState<any>(null);
     const [loading, setLoading] = useState(false);
-    const [paymentSuccess, setPaymentSuccess] = useState(false);
 
     const SERVICES = [
         { id: 'electricity', label: t('electricity'), icon: Zap, color: 'text-yellow-500', bg: 'bg-yellow-50' },
@@ -33,7 +32,6 @@ export default function PayBill() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-            setPaymentSuccess(true);
             setStep(4);
         }, 2000);
     };

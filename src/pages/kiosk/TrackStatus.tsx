@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TouchInput from '../../components/TouchInput';
 import { Search, ChevronLeft, CheckCircle, Clock, Circle } from 'lucide-react';
-import { api, type Complaint as ComplaintType } from '../../services/api';
+import { type Complaint as ComplaintType } from '../../services/api';
 import { useKioskStore } from '../../store/useKioskStore';
 
 export default function TrackStatus() {

@@ -1,7 +1,7 @@
 export const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const mockApi = {
-    login: async (method: 'mobile' | 'face', credentials: any) => {
+    login: async (_method: 'mobile' | 'face', _credentials: any) => {
         await delay(1500);
         return { success: true, user: { id: 'u1', name: 'Ravi Kumar', role: 'citizen' } };
     },
@@ -27,7 +27,7 @@ export const mockApi = {
         ]
     },
 
-    submitComplaint: async (data: any) => {
+    submitComplaint: async (_data: any) => {
         await delay(2000);
         return { ticketId: 'CMP-' + Math.floor(Math.random() * 10000) };
     }

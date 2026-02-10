@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Settings, Save, type LucideIcon } from 'lucide-react';
+import { Settings, Save} from 'lucide-react';
 
 export default function ContentManager() {
     const [tickerText, setTickerText] = useState('Unified Civic Services Kiosk - 24x7 Support | Helpline: 1800-123-4567');

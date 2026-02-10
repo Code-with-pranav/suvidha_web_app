@@ -14,12 +14,6 @@ import ComplaintsMgmt from './pages/admin/ComplaintsMgmt';
 import ContentManager from './pages/admin/ContentManager';
 import NewConnection from './pages/kiosk/NewConnection';
 
-// Placeholder components for routes we haven't built yet
-const Placeholder = ({ title }: { title: string }) => (
-  <div className="flex items-center justify-center h-full text-2xl font-bold text-gray-400">
-    {title} - Coming Soon
-  </div>
-);
 
 function App() {
   return (

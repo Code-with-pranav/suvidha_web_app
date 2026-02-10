@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { api, type Complaint } from '../../services/api';
-import { Filter, Search, AlertCircle, CheckCircle, Clock } from 'lucide-react';
+import { Search, AlertCircle, CheckCircle, Clock } from 'lucide-react';
 
 export default function ComplaintsMgmt() {
     const [complaints, setComplaints] = useState<Complaint[]>([]);

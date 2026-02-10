@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Upload, X, FileText, Image as ImageIcon, CheckCircle } from 'lucide-react';
+import { Upload, FileText, Image as ImageIcon, CheckCircle } from 'lucide-react';
 import { useKioskStore } from '../../store/useKioskStore';
 
 export default function DocumentUpload() {

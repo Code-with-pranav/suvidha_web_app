@@ -42,12 +42,7 @@ export const api = {
         return MOCK_COMPLAINTS;
     },
 
-    submitComplaint: async (category: string, details: string): Promise<string> => {
-        await delay(1500);
-        return `TKT-${Math.floor(Math.random() * 10000)}`;
-    },
-
-    fetchBill: async (consumerId: string, type: string) => {
+    fetchBill: async (consumerId: string) => {
         await delay(1200);
         // Random mock bill
         if (consumerId.length < 5) throw new Error('Invalid ID');
